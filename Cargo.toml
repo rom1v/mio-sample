@@ -1,0 +1,10 @@
+[package]
+name = "mio-sample"
+version = "0.1.0"
+authors = ["Romain Vimont <rom@rom1v.com>"]
+
+[dependencies]
+mio = "0.6"
+
+[features]
+workaround = []  # ignore spurious events on windows when enabled
