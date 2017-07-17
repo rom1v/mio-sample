@@ -153,3 +153,12 @@ Here is the description of the [error 10035] reported by Windows:
 However, in this sample, `WouldBlock` results from a spurious readable event,
 not related to the connect call (the client has already read the first readable
 event).
+
+
+### Expected behavior
+
+Finally, this is the [expected behavior] for `mio`: [spurious events] are
+posible.
+
+[expected behavior]: https://github.com/carllerche/mio/issues/632#issuecomment-315819972
+[spurious events]: https://docs.rs/mio/0.6.9/mio/struct.Poll.html#spurious-events
