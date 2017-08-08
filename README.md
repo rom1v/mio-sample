@@ -15,7 +15,7 @@ expected behavior.
 This sample starts listening on a (blocking) TCP socket on 127.0.0.1:1234 in a
 separate thread.
 
-Then it connects to it using a (non-blocking / mio) TCP socket, and poll to get
+Then it connects to it using a (non-blocking / mio) TCP socket, and polls to get
 the incoming events.
 
 The server then sends some data to the client. On events, the client prints data
